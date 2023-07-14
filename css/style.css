@@ -1,0 +1,287 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Phudu:wght@300;400;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+
+    /* background-color: #202123; */
+}
+
+header .header-left {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+}
+
+.h2header{
+    font-family: 'Phudu', cursive;
+    color: rgb(180, 31, 31);
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+header .header-left nav {
+    margin-left: 50px;
+}
+
+header .header-left nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    display: block;
+    color: #cfd9e0;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: 0.2s;
+    text-decoration: none;
+    font-family: 'Phudu', cursive;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #fff;
+}
+
+header .header-right .hamburger {
+    margin-left: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+header .header-right .hamburger div {
+    width: 20px;
+    height: 2px;
+    margin: 4px 0;
+    background: #fff;
+}
+
+/* MAIN */
+/* 
+.contenedor{
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    
+} */
+
+header, .contenedor{
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    background-position: auto;
+}
+
+.contenedor{
+    height: 68vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.contenedor .titulo{
+    font-family: 'Phudu', cursive;
+    text-align: center;
+    color: rgb(180, 31, 31);
+    font-size: 4rem;
+    padding: .9rem 0;
+    letter-spacing: 2px;
+}
+
+.contenedor h3{
+    font-family: 'Phudu', cursive;
+    text-align: center;
+    color: rgb(180, 31, 31);
+    font-size: 1.2rem;
+    padding: .4rem 0;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.contenedor .pclass{
+    color: white;
+    padding: 1.4rem;
+    font-family: 'Phudu', cursive;
+    text-align: center;
+    font-size: .9rem;
+}
+
+.contenedor .btn-informacion{
+    font-family: 'Phudu', cursive;
+    text-decoration: none;
+    padding: .8rem 1.2rem;
+    background-color: rgb(180, 31, 31);
+    color: white;
+    margin-top: 1rem;
+    letter-spacing: 2px;
+    transition: 2s;
+    font-weight: 600;
+}
+
+.contenedor .btn-informacion:hover{
+    background-color: white;
+    border: solid 1px rgb(180, 31, 31);
+    color: black;
+}
+
+.contenedordnh{
+    /* background-color: rgba(255, 255, 0, 0.205); */
+    display: flex;
+    padding: 2rem 0;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.contenedordnh .cajitadnh{
+    display: flex;
+    /* background-color: yellowgreen; */
+    flex-direction: column;
+    padding: 2rem 0;
+    text-align: center;
+    gap: 1rem;
+}
+
+p{
+    font-family: 'Phudu', cursive;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.cajitadnh .h3dnh{
+    font-family: 'Phudu', cursive;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
+
+    header {
+        padding: 0 20px;
+    }
+
+    header .header-right .hamburger {
+        display: block;
+        padding: .5rem;
+        transition: .4s;
+    }
+
+    header .header-right .hamburger:hover{
+        background-color: #cfd9e036;
+        border-radius: 50%;
+    }
+
+    header .header-left nav {
+        margin: 0;
+        position: absolute;
+        top: -100%;
+        right: 0;
+        height: 68vh;
+        width: 50%;
+        /* width: 64%;
+        height: 68vh; */
+        /* height: fit-content; */
+        /* border-top-left-radius: 6rem; */
+        border-bottom-left-radius: 4rem;
+        background-color: #202123e5;
+        padding: 1rem;
+        transition: .5s;
+        text-align: start;
+        z-index: 1;
+        box-shadow: 0 0 4rem 0 rgba(255, 255, 255, 0.11);
+    }
+    
+    header .header-left nav.active {
+        top: 70px;
+    }
+    
+    header .header-left nav ul {
+        display: block;
+        list-style: none;
+    }
+
+    .contenedordnh{
+        display: none;
+    }
+
+}

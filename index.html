@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>BARBER</title>
+</head>
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+        <div class="logo">
+            <a class="h2header" href="./index.html">
+            <h2 class="h2header">BARBER</h2>
+        </a>
+        </div>
+        <div class="header-left">
+            
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#" class="active">INICIO</a>
+                    </li>
+                    <li>
+                        <a href="#">SERVICIOS</a>
+                    </li>
+                    <li>
+                        <a href="#">PRODUCTOS</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#">CONTACTOS</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="header-right">
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+
+    <main>
+
+        <div class="contenedor">
+
+            <h1 class="titulo">BARBERIA</h1>
+
+            <h3>VILLA MERCEDES</h3>
+
+            <p class="pclass">Lorem ipsum dolor sit amet consectetur, adipisicing elit.  Praesentium velit minima et rem fugit<br>tempora cumque quo nemo doloribus quam ullam, blanditiis error eius ut dolorum ipsa veniam id in.</p>
+
+            <a class="btn-informacion" href="#">INFORMACION</a>
+
+            <div class="contenedordnh">
+
+                <div class="cajitadnh">
+                <h3 class="h3dnh">DIRECCION</h3>
+                <p>YRIHOYEN 123</p>
+                </div>
+
+                <div class="cajitadnh">
+                <h3 class="h3dnh">2324232</h3>
+                <p>YRIHOYEN 123</p>
+                </div>
+
+                <div class="cajitadnh">
+                <h3 class="h3dnh">HORARIOS</h3>
+                <p>9 AM 9 PM</p>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </main>
+
+
+
+
+
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        nav = document.querySelector("nav");
+        hamburger.onclick = function() {
+            nav.classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>
